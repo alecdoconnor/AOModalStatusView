@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AOModalStatusView" customModule="AOModalStatus" customModuleProvider="target">
+            <connections>
+                <outlet property="headlineLabel" destination="ZYm-El-Gwi" id="TLo-et-9tQ"/>
+                <outlet property="statusImage" destination="jIO-5d-KWH" id="MaE-Tr-2Kl"/>
+                <outlet property="subheadLabel" destination="2hs-hD-HIW" id="x5K-p8-D4o"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5GE-gE-wZe">
+            <rect key="frame" x="0.0" y="0.0" width="230" height="230"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="zK4-Ez-z5u">
+                <rect key="frame" x="0.0" y="0.0" width="230" height="230"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jIO-5d-KWH">
+                        <rect key="frame" x="50" y="10" width="130" height="130"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130" id="B7U-Jr-lCF"/>
+                            <constraint firstAttribute="height" constant="130" id="CFw-oD-bm6"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Headline Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYm-El-Gwi">
+                        <rect key="frame" x="8" y="160" width="214" height="20.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Optional multi-line capable subhead label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hs-hD-HIW">
+                        <rect key="frame" x="8" y="185.5" width="214" height="38"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jIO-5d-KWH" firstAttribute="top" secondItem="zK4-Ez-z5u" secondAttribute="top" constant="10" id="6UY-KL-lDt"/>
+                    <constraint firstItem="ZYm-El-Gwi" firstAttribute="leading" secondItem="zK4-Ez-z5u" secondAttribute="leadingMargin" id="Dhz-QH-eaV"/>
+                    <constraint firstItem="jIO-5d-KWH" firstAttribute="centerX" secondItem="zK4-Ez-z5u" secondAttribute="centerX" id="GgF-NF-7pL"/>
+                    <constraint firstItem="2hs-hD-HIW" firstAttribute="leading" secondItem="zK4-Ez-z5u" secondAttribute="leadingMargin" id="NGV-ih-FU2"/>
+                    <constraint firstItem="2hs-hD-HIW" firstAttribute="top" secondItem="ZYm-El-Gwi" secondAttribute="bottom" constant="5" id="TPn-Ba-1yY"/>
+                    <constraint firstItem="ZYm-El-Gwi" firstAttribute="top" secondItem="jIO-5d-KWH" secondAttribute="bottom" constant="20" id="dWz-aP-iPH"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="2hs-hD-HIW" secondAttribute="trailing" id="rMx-1y-fQw"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ZYm-El-Gwi" secondAttribute="trailing" id="zex-Ux-797"/>
+                </constraints>
+            </view>
+            <constraints>
+                <constraint firstAttribute="width" constant="230" id="EXw-wN-Xkp"/>
+                <constraint firstAttribute="height" constant="230" id="MxV-EG-t7f"/>
+            </constraints>
+            <blurEffect style="light"/>
+            <point key="canvasLocation" x="79" y="-1"/>
+        </visualEffectView>
+    </objects>
+</document>

@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		70AC95F81F8DC32F00960B51 /* AOModalStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 70AC95F61F8DC32F00960B51 /* AOModalStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70AC95FF1F8DC5E400960B51 /* AOModalStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AC95FE1F8DC5E400960B51 /* AOModalStatusView.swift */; };
+		70AC96011F8DC66700960B51 /* AOModalStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70AC96001F8DC66700960B51 /* AOModalStatusView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		70AC95F31F8DC32F00960B51 /* AOModalStatus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AOModalStatus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70AC95F61F8DC32F00960B51 /* AOModalStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOModalStatus.h; sourceTree = "<group>"; };
 		70AC95F71F8DC32F00960B51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70AC95FE1F8DC5E400960B51 /* AOModalStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOModalStatusView.swift; sourceTree = "<group>"; };
+		70AC96001F8DC66700960B51 /* AOModalStatusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AOModalStatusView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,8 @@
 			children = (
 				70AC95F61F8DC32F00960B51 /* AOModalStatus.h */,
 				70AC95F71F8DC32F00960B51 /* Info.plist */,
+				70AC95FE1F8DC5E400960B51 /* AOModalStatusView.swift */,
+				70AC96001F8DC66700960B51 /* AOModalStatusView.xib */,
 			);
 			path = AOModalStatus;
 			sourceTree = "<group>";
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					70AC95F21F8DC32F00960B51 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -121,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70AC96011F8DC66700960B51 /* AOModalStatusView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70AC95FF1F8DC5E400960B51 /* AOModalStatusView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +262,7 @@
 		70AC95FC1F8DC32F00960B51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -266,6 +276,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.alecoconnor.AOModalStatus;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -274,6 +285,7 @@
 		70AC95FD1F8DC32F00960B51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

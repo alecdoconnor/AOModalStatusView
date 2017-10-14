@@ -9,22 +9,16 @@ Many different methods have arrived to do just this, from a subtle drop down not
 
 Apple's solution is to display a self-removing and small modal view to the screen.
 
-![alt text](https://user-images.githubusercontent.com/20458718/31577957-33ec53ce-b0dd-11e7-8b50-0031889040fd.PNG "Apple's custom use of Modal Status Views")
+![text](https://user-images.githubusercontent.com/20458718/31577957-33ec53ce-b0dd-11e7-8b50-0031889040fd.PNG "Apple's custom use of Modal Status Views")
 
 With uses in the News app, the Apple Music app, and the Podcasts app, developers have been wanting access to this view for a while now. 
 That is what this framework solves.
 
 ## Design
 
-![minipic](https://user-images.githubusercontent.com/20458718/31578023-a6b69166-b0de-11e7-8446-7ef0d22da452.png "AOModalStatusView Design and Implementation")
-![minipic](https://user-images.githubusercontent.com/20458718/31578226-7cd123b2-b0e2-11e7-8f46-0b00cc8ad865.gif "AOModalStatusView Animation Gif (not jif)")
+<img src="https://user-images.githubusercontent.com/20458718/31578023-a6b69166-b0de-11e7-8446-7ef0d22da452.png" width="250px" />
+<img src="https://user-images.githubusercontent.com/20458718/31578226-7cd123b2-b0e2-11e7-8f46-0b00cc8ad865.gif" width="250px" />
 
-<style>
-img[alt="minipic"] { 
-  max-width: 250px; 
-  display: block;
-}
-</style>
 
 The animation lasts two seconds, but I had trouble getting the gif to perform at the correct speed.
 

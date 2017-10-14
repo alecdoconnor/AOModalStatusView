@@ -17,6 +17,9 @@ That is what this framework solves.
 ## Design
 
 ![alt text](https://user-images.githubusercontent.com/20458718/31578023-a6b69166-b0de-11e7-8446-7ef0d22da452.png "AOModalStatusView Design and Implementation")
+![alt text](https://user-images.githubusercontent.com/20458718/31578226-7cd123b2-b0e2-11e7-8f46-0b00cc8ad865.gif "AOModalStatusView Animation Gif (not jif)")
+
+The animation lasts two seconds, but I had trouble getting the gif to perform at the correct speed.
 
 ## Instructions
 
